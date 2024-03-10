@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @keyframes colorChange {
+            0% {background-color: rgb(234, 230, 230);}
+            100% {background-color: #f8c5e6;}
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(234, 230, 230);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            animation: colorChange 5s infinite;
+        }
+        .content{
+            width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #49AFD0;
+            color: white;
+            border: none;
+            font-size: 15px;
+        }
+
+        a {
+            color: #90A5A8;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class = "content">
+        <h2>Sign Up</h2>
+        <p>For registration, We suggest you to use a password which is unique only to this site.</p>
+        <form>
+            <input type = "email" placeholder="Email">
+            <input type = "password" placeholder="Password">
+            <input type = "password" placeholder="Confirm Password">
+            <button type = "submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Sign in</a></p>
+        </form>
+    </div>
+</body>
+</html>

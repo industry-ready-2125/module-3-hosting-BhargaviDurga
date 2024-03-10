@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Z-library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(234, 230, 230);
+        }
+        a {
+            color: #90A5A8;
+        }
+        .Books {
+            vertical-align: top;
+            font-size: 18px;
+            color:white;
+            background-color: #49AFD0;
+            padding : 10px;
+        }
+        .Articles {
+            vertical-align: top;
+            font-size: 18px;
+            color:white;
+            background-color: #8ECD51;
+            padding : 10px;
+        }
+        .signup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f8c5e6;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .page {
+            width: 80%;
+            margin: auto;
+            justify-content: center;
+        }
+        .header {
+            text-align: center;
+        }
+        .content {
+            vertical-align: top;
+            margin-bottom: 150px;
+        }
+        .search {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .search input[type="text"] {
+            max-width: 500px;
+            width: 100%;
+            padding: 15px;
+            font-size: 15px;
+        }
+        .search button[type="submit"] {
+            margin-left: 10px;
+            padding: 15px;
+            font-size: 15px;
+        }
+        .tag_line1 {
+            font-size: 15px;
+            font-style: italic;
+            color: #90A5A8;
+        }
+        .tag_line2 {
+            padding: 10px;
+            font-size: 18px;
+            background-color: #c8fcfc;
+            text-align: left;
+            max-width: 500px;
+            margin: auto;
+        }
+        .others {
+            display: flex;
+            justify-content: space-around;
+            max-width: 500px;
+            margin: auto;
+        }
+        .booklists, .most_popular, .articles {
+            margin-top: 20px;
+            background-color: #f8c5e6;
+            text-align: center;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <table>
+            <tr>
+                <td class = "Books">Books</td>
+                <td class = "Articles">Articles</td>
+            </tr>
+        </table>
+    </div>
+    <div class="signup">
+        <a href="signup.html">Sign Up</a>
+    </div>
+    <div class="page">
+        <div class="header">
+            <img src="logo.webp" width="300px">
+            <p class = "tag_line1">Part of Z-library project. The world's largest ebook library</p>
+            <p class = "tag_line2">We are back! Please <a href="login.html">login</a> to request any book.</p>
+        </div>
+        <form class="search">
+            <input type="text" placeholder="Search for title, author, publisher">
+            <button type="submit">Search</button>
+        </form>
+        <div class = "others">
+            <div class = "booklists">
+                <a href="books.html">Booklists</a>
+            </div>
+            <div class = "most_popular">
+                <a href="most_popular.html">Most Popular</a>
+            </div>
+            <div class = "articles">
+                <a href="articles.html">Articles<a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

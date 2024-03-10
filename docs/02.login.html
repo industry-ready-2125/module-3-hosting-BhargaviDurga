@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @keyframes colorChange {
+            0% {background-color: rgb(234, 230, 230);}
+            100% {background-color: #f8c5e6;}
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(234, 230, 230);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            animation: colorChange 5s infinite;
+        }
+
+        .content-box {
+            width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: black;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #49AFD0;
+            color: white;
+            border: none;
+            font-size: 15px;
+        }
+
+        a {
+            color: #90A5A8;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <img src="logo.webp" width="300px">
+        <form>
+            <input type = "email" placeholder="Email">
+            <input type = "password" placeholder="Password">
+            <a href="forgot_password.html">Forgot password?</a>
+            <button type = "submit">Sign in</button>
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>
